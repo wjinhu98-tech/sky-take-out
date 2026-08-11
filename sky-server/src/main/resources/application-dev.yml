@@ -1,8 +1,14 @@
+spring:
+  redis:
+    host: ${SKY_REDIS_HOST:192.168.88.130}
+    port: ${SKY_REDIS_PORT:6379}
+    password: ${SKY_REDIS_PASSWORD:123456}
+
 sky:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    host: localhost
-    port: 3306
-    database: sky_take_out
-    username: root
-    password: root
+    host: ${SKY_DB_HOST:127.0.0.1}
+    port: ${SKY_DB_PORT:3306}
+    database: ${SKY_DB_DATABASE:sky_take_out}
+    username: ${SKY_DB_USERNAME:root}
+    password: ${SKY_DB_PASSWORD:123456}
