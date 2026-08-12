@@ -26,3 +26,4 @@ public class MessageConstant {
     public static final String ORDER_NOT_FOUND = "订单不存在";
 
 }
+
