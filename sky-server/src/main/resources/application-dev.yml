@@ -1,14 +1,19 @@
 spring:
   redis:
-    host: ${SKY_REDIS_HOST:192.168.88.130}
-    port: ${SKY_REDIS_PORT:6379}
-    password: ${SKY_REDIS_PASSWORD:123456}
+    host: 192.168.88.130
+    port: 6379
+    password: 123456
 
 sky:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    host: ${SKY_DB_HOST:127.0.0.1}
-    port: ${SKY_DB_PORT:3306}
-    database: ${SKY_DB_DATABASE:sky_take_out}
-    username: ${SKY_DB_USERNAME:root}
-    password: ${SKY_DB_PASSWORD:123456}
+    host: 127.0.0.1
+    port: 3306
+    database: sky_take_out
+    username: root
+    password: 123456
+  alioss:
+    endpoint: ${ALIYUN_OSS_ENDPOINT:oss-cn-beijing.aliyuncs.com}
+    access-key-id: ${ALIYUN_OSS_ACCESS_KEY_ID}
+    access-key-secret: ${ALIYUN_OSS_ACCESS_KEY_SECRET}
+    bucket-name: ${ALIYUN_OSS_BUCKET_NAME:sky-wjh}

@@ -4,3 +4,11 @@
 *.class
 *Test.java
 **/test/
+
+# 本地环境配置（含密钥等敏感信息，禁止提交）
+application-local.yml
+application-local.yaml
+application-local.properties
+.env
+.env.*
+!.env.example
