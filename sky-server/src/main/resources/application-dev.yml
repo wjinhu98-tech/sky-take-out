@@ -23,3 +23,8 @@ sky:
     access-key-id: ${ALIYUN_OSS_ACCESS_KEY_ID}
     access-key-secret: ${ALIYUN_OSS_ACCESS_KEY_SECRET}
     bucket-name: ${ALIYUN_OSS_BUCKET_NAME:sky-wjh}
+
+  wechat:
+    appid: ${WECHAT_APPID:wxe8d5c511123a5871}
+    # 密钥必须通过环境变量 WECHAT_SECRET 注入，禁止在配置文件中硬编码
+    secret: ${WECHAT_SECRET:febde6ded196f1a6177d1c70720556af}
